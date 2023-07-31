@@ -535,9 +535,20 @@ void loggin(){
 }
 
 int main(){
-    get_c();
+  get_c();
     get_p();
     get_st();
+    get_auth();
+
+    if (i == 0) {
+        printf("No students found. Adding a student...\n");
+        add_student();
+    }
+    if (z == 0) {
+        printf("No professors found. Adding a professor...\n");
+        add_prof();
+    }
+
     loggin();
     
     
